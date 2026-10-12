@@ -120,7 +120,13 @@ Output goes to `eval/reports/eval_<timestamp>.md` and `.json`, with:
 - **Confusion matrix** + **disagreement analysis** (Nelson vindicated / human right / under-call)
 - **Per-customer detail** with rationale and citation count
 
-The bundle passed to Nelson **strips pre-computed risk/decision fields** — Nelson must reason from raw evidence (orders, tickets, notes, emails, fulfillment events, prior reviews). No leakage.
+The bundle passed to Nelson strips the pre-computed risk and decision fields, so Nelson reasons from raw evidence (orders, tickets, notes, emails, fulfillment events, prior reviews).
+
+### Limits of the synthetic labels, and a blind human-label set
+
+Each synthetic label follows from its scenario: every `escalation_retention_case` review is Escalate and every `late_delivery_frustration` review is Monitor, and no review is labeled Stabilize. The prior reviews and synthetic notes in a bundle can name that scenario, so agreement with these labels measures how well a model recovers the generator's scenario. In every recorded 30-case run, Nelson matched 14 or 15 of the 15 Escalate cases and none of the 15 Monitor cases.
+
+`eval/human_labels/` holds 80 cases (40 per synthetic label, one per customer) prepared for people to label blind, with the scenario tags, prior decisions and customer names removed, plus a scoring command that compares Nelson with the majority human label (accuracy with a 95% interval, macro F1, Cohen's kappa between labelers). See `eval/human_labels/README.md`. No human labels have been collected yet.
 
 ## Project structure
 

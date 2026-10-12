@@ -10,6 +10,11 @@ Commands:
                           TELEGRAM_BOT_TOKEN is set in .env.
     eval [limit] [seed]   Run holdout eval (Nelson vs human_decision labels).
                           Defaults: limit=30, seed=42. Output -> eval/reports/.
+    label-sheet [n] [seed]  Build the blind human-labeling set (default 80 cases, seed 7)
+                          -> eval/human_labels/. No API calls.
+    label-predict         Model predictions on the blind cases (one API call per case).
+    label-score SHEET.csv [...] [--predictions FILE] [--out FILE]
+                          Score human labels and predictions. No API calls.
 """
 from __future__ import annotations
 
@@ -106,6 +111,17 @@ def main() -> int:
         limit = int(sys.argv[2]) if len(sys.argv) > 2 else 30
         seed = int(sys.argv[3]) if len(sys.argv) > 3 else 42
         return run_eval(limit=limit, seed=seed)
+    if cmd == "label-sheet":
+        from nelson.labeling import run_build
+        n = int(sys.argv[2]) if len(sys.argv) > 2 else 80
+        seed = int(sys.argv[3]) if len(sys.argv) > 3 else 7
+        return run_build(n=n, seed=seed)
+    if cmd == "label-predict":
+        from nelson.labeling import run_predict
+        return run_predict()
+    if cmd == "label-score":
+        from nelson.label_score import run_score
+        return run_score(sys.argv[2:])
     print(f"  [error] unknown command: {cmd}", file=sys.stderr)
     print(__doc__)
     return 1
