@@ -1,0 +1,485 @@
+{
+  "model": "gemini-3-flash-preview",
+  "predictions": [
+    {
+      "case_id": "H001",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively following up on a late delivery recovery plan as of 2026-05-06, expressing concern and requesting clarity on next steps while a high-severity carrier delay remains unresolved.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H002",
+      "predicted_decision": "Monitor",
+      "rationale": "The recent executive escalation and high-volume email thread from May 6th were already addressed in the prior reviews on May 7th and 8th; note N15239 specifically directs to monitor the resolution of the current thread.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H003",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a recovery dialogue regarding a chronic 83% late delivery rate and has three unresolved high-priority support tickets requiring immediate follow-up.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H004",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently involved in an active executive escalation thread (E16950) with multiple follow-ups (E16949) regarding unresolved service issues, and a specific outreach plan is still pending (N12260).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H005",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a 'Late Delivery Recovery' email thread as of May 2026, expressing concern and requesting clarity on next steps, which requires a specific intervention to resolve.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H006",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is involved in an active 'Executive Escalation' thread with multiple unresolved touches and a recent order placed on hold, requiring high-level intervention to protect revenue.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H007",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a 'Late Delivery Recovery' email thread as of May 6, 2026, and is requesting clarity on next steps. Internal notes confirm that specific outreach is pending to address the high late-delivery rate and unresolved support tickets.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H008",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on a 'Late Delivery Recovery' plan as of May 6, 2026, and internal notes indicate outreach is still being prepared to address their concerns regarding a 60% historic late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H009",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively requesting clarity on late delivery recovery (E20819), and internal notes from May 2026 (N14536, N14538) indicate that a specific outreach and follow-up plan is currently being prepared to address the high historical late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H010",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively requesting clarity on a late delivery recovery plan as of May 2026, with multiple unresolved carrier delays and negative account profitability requiring immediate intervention.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H011",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active executive escalation thread as of 2026-05-06, with multiple emails and a specific note documenting the need to protect revenue and address unresolved issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H012",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active executive escalation thread (E17721) and has an unresolved high-priority ticket (T5112) regarding productivity-impacting issues, compounded by a 78% late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H013",
+      "predicted_decision": "Monitor",
+      "rationale": "The recent executive escalation and customer request for clarity on May 6 were already addressed by Customer Success and noted in the subsequent reviews on May 7 and May 8. Since the risk band was explicitly identified as Low in the recent notes and no new incidents have occurred since the last review, the account remains in a stable monitoring state.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H014",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is actively engaged in an 'Executive Escalation' thread as of May 2026, explicitly requesting clarity on next steps regarding unresolved issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H015",
+      "predicted_decision": "Monitor",
+      "rationale": "Recent service concerns and an executive escalation were addressed by Customer Success on 2026-05-06 (E18920) and acknowledged in prior reviews on 2026-05-07 and 2026-05-08, with no new incidents occurring since.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H016",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on next steps regarding a late delivery recovery plan as of May 2026, and there are four unresolved high-priority support tickets dating back to early 2025.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H017",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is involved in an active 'Executive Escalation' email thread with 13 messages, most recently following up for clarity on next steps on 2026-05-06.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H018",
+      "predicted_decision": "Stabilize",
+      "rationale": "Recent internal notes and outreach from May 6, 2026, explicitly state that the customer needs follow-up regarding a high late-delivery rate (0.6538) and a recent unprofitable late order.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H019",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a concerned email thread (E24019) regarding late delivery recovery as of May 2026, and internal notes (N16419) indicate a specific outreach and recovery plan is currently being prepared but not yet finalized.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H020",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently in an active 'Executive Escalation' email thread as of May 6, 2026, with the customer seeking clarity on unresolved issues and multiple support tickets remaining in Open or Pending status.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H021",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on next steps regarding late delivery recovery in a recent email thread from 2026-05-06, and internal notes indicate outreach is being prepared but not yet completed.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H022",
+      "predicted_decision": "Monitor",
+      "rationale": "The account is currently in an active executive escalation thread with recent CS outreach (E18806) addressing fulfillment issues. Since the situation was already noted in reviews on May 7 and May 8 and no new incidents have occurred since, continued monitoring of the recovery is the expected decision.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H023",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery outreach is currently in progress regarding chronic late deliveries and unresolved high-priority tickets, with the customer explicitly requesting clarity on next steps as of May 2026.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H024",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer has explicitly requested executive attention via email (E20535) regarding unresolved issues, and internal notes (N14372) confirm an active escalation summary to protect revenue and address the high late-delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H025",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on late delivery recovery in a recent email thread (2026-05-06), and internal notes explicitly state that follow-up is required to address these ongoing fulfillment issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H026",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is involved in an active executive escalation thread as of 2026-05-06 and has three unresolved high-priority support tickets alongside a severe 83% late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H027",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is involved in an active 'Executive Escalation' thread as of May 6, 2026, with both the customer and Success team seeking clarity on next steps and revenue protection.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H028",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on a late delivery recovery plan as of 2026-05-06, and internal notes confirm that follow-up is required to address the high late-delivery rate and an open fulfillment issue.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H029",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently under an active 'Executive Escalation' as evidenced by the high-volume email thread and recent notes from May 2026 regarding revenue protection and unresolved issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H030",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on next steps for late delivery recovery (E18953), and internal notes confirm a follow-up is required for a high-risk situation involving a 90% late delivery rate and an open Critical ticket (T5609, N13440).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H031",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer has multiple unresolved critical tickets and an active executive escalation thread following repeated failed support attempts and a 100% late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H032",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively requesting clarity on a late delivery recovery plan as of May 6, 2026, and has an unresolved technical support ticket from February.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H033",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently undergoing an active executive escalation as evidenced by multiple recent emails (E19194) and notes (N13578, N13579) regarding the preparation of outreach and alignment of response tone for an escalation scenario.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H034",
+      "predicted_decision": "",
+      "rationale": "",
+      "parse_error": true
+    },
+    {
+      "case_id": "H035",
+      "predicted_decision": "",
+      "rationale": "",
+      "parse_error": true
+    },
+    {
+      "case_id": "H036",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active outreach for late delivery recovery is currently in progress as of May 2026, with multiple high-priority support tickets remaining unresolved.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H037",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer explicitly requested an executive escalation on 2026-05-06 (E11523) seeking clarity on next steps, compounded by a high historical late delivery rate and unresolved fulfillment events.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H038",
+      "predicted_decision": "Monitor",
+      "rationale": "The account is currently involved in an executive escalation thread (E9878) that was already addressed in recent human reviews on 2026-05-07 and 2026-05-08. Note N8106 explicitly directs to monitor the resolution of this thread, and no new incidents have occurred since the last review.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H039",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a 'Late Delivery Recovery' email thread as of 2026-05-06, explicitly requesting clarity on next steps regarding a high rate of fulfillment delays.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H040",
+      "predicted_decision": "Stabilize",
+      "rationale": "An active 'Executive Escalation' email thread and internal notes from May 6, 2026, indicate that the customer is seeking clarity and that specific outreach and follow-up are still pending to address the high risk and support history.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H041",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on a 'Late Delivery Recovery' plan as of May 2026, following a high late delivery rate (0.72) and unresolved carrier delays. CS is currently preparing outreach to address these specific, recent concerns.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H042",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a 'Late Delivery Recovery' thread as of 2026-05-06, expressing concern and requesting clarity on next steps, which note N15343 confirms requires follow-up.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H043",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer initiated a follow-up on 2026-05-06 (E21131) expressing concern and requesting clarity on next steps for late delivery recovery, which remains unresolved alongside multiple open carrier delay events.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H044",
+      "predicted_decision": "Stabilize",
+      "rationale": "An active recovery effort is underway following a flurry of concerned emails on 2026-05-06 where the customer requested clarity on next steps regarding late deliveries and a specific risk pattern noted in N12463.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H045",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently in an active executive escalation thread (E16240) with multiple unresolved critical tickets (T6712, T6697, T5306) and a near-total late delivery rate (0.9583).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H046",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer explicitly requested executive attention in recent emails (E22587) and internal notes (N15580) confirm an active escalation summary to protect revenue and address unresolved issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H047",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively following up via email as of 2026-05-06 regarding a late delivery recovery plan and requires clarity on next steps, which internal notes indicate are still being prepared for outreach.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H048",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively requesting clarity on a late delivery recovery plan via multiple emails on 2026-05-06, and internal notes confirm a follow-up is required to address ongoing fulfillment issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H049",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active executive escalation process as evidenced by recent email threads and notes regarding unresolved high-severity fulfillment delays.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H050",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently involved in an active 'Executive Escalation' email thread as of May 6, 2026, with internal notes indicating that outreach is being prepared to address the customer's request for clarity.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H051",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently in an active 'Executive Escalation' email thread (E24872) with unresolved tickets (T6763, T5225) and a significant late delivery rate of 0.76, as noted in recent internal reviews (N16915, N16916).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H052",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a high-frequency email thread today (2026-05-06) regarding late delivery recovery and has explicitly requested clarity on next steps which remain unresolved.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H053",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on a late delivery recovery plan as of May 2026, and internal notes explicitly state that follow-up is required to address the high late-delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H054",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is in an active executive escalation state with multiple unresolved customer follow-ups and a high late-delivery rate impacting profitability.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H055",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active email correspondence on 2026-05-06 shows the customer is explicitly requesting clarity on next steps for late delivery recovery, and internal notes confirm a follow-up is required.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H056",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently engaged in an active 'Executive Escalation' email thread as of May 6, 2026, where they are seeking clarity on unresolved issues following a history of high late delivery rates (0.7143) and open fulfillment delays.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H057",
+      "predicted_decision": "Monitor",
+      "rationale": "The recent executive escalation thread from 2026-05-06 was addressed by Customer Success with a proposed next action, and internal notes explicitly recommend monitoring the outcome of that interaction.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H058",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer has explicitly engaged in an 'Executive Escalation' thread as of May 2026, seeking clarity on next steps regarding a high late-delivery rate (0.68). Recent notes and emails confirm an active escalation process to protect revenue and resolve open fulfillment issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H059",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery outreach is in progress as of May 2026 regarding the high late delivery rate (0.76), with the customer explicitly seeking clarity on next steps in recent email threads.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H060",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively following up on a late delivery recovery plan as of May 6, 2026, and has an unresolved cancellation request (T5607) regarding product compatibility issues.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H061",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer has explicitly initiated an executive escalation (E21985) and is repeatedly following up for clarity on unresolved issues (E21979), as documented in recent internal notes (N15224).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H062",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer has an extremely high late delivery rate (85%) and an active critical support ticket (T5478). Recent communications from May 2026 indicate an ongoing but unresolved recovery effort regarding these delivery failures.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H063",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently in an active executive escalation thread as of May 2026, compounded by three unresolved critical support tickets regarding product compatibility and account access.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H064",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively seeking clarity on a late delivery recovery plan as of May 6, 2026, and there is an unresolved high-severity carrier delay for order O068704.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H065",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active executive escalation thread (E21429) and has explicitly requested clarity on next steps regarding their high late delivery rate and support history, as noted in recent risk reviews (N14892).",
+      "parse_error": false
+    },
+    {
+      "case_id": "H066",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently in an active executive escalation thread (E16648) with multiple unresolved high-priority support tickets (T5394, T5392) and a severe 85% late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H067",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively requesting clarity on a late delivery recovery plan in a recent email thread from May 2026, and internal notes explicitly state that follow-up is required.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H068",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery effort is underway following a history of late deliveries; the customer explicitly requested clarity on next steps in a recent email thread from May 2026.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H069",
+      "predicted_decision": "Escalate",
+      "rationale": "The account is currently under an active executive escalation thread following multiple unresolved critical tickets and a failed service recovery attempt with a 1.0 CSAT rating.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H070",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active 'Executive Escalation' email thread as of May 2026, compounded by multiple unresolved support tickets from late 2025 and a high historic late-delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H071",
+      "predicted_decision": "Escalate",
+      "rationale": "The customer is currently in an active executive escalation thread as of May 6, 2026, with multiple concerned communications regarding unresolved next steps and a high 60% late delivery rate.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H072",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery effort is underway following recent customer concerns regarding late deliveries (E15933) and an unresolved high-loss late order (O063890) with an open carrier delay event.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H073",
+      "predicted_decision": "Stabilize",
+      "rationale": "There is an active, unresolved outreach thread regarding late delivery recovery as of 2026-05-06, where the customer is explicitly requesting clarity on next steps.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H074",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery outreach is currently in progress regarding the high late-delivery rate, with the customer explicitly requesting clarity on next steps in recent correspondence from May 2026.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H075",
+      "predicted_decision": "Stabilize",
+      "rationale": "Active recovery outreach is currently in progress (May 2026) to address a chronic 82% late delivery rate, with the customer explicitly requesting clarity on next steps in recent email threads.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H076",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer has a 95% late delivery rate and three open critical tickets (T5742, T5750, T5743) regarding account access and delivery issues. Recent email activity (E23515) and internal notes (N16124) from May 2026 indicate an active recovery intervention is underway but unresolved.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H077",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is in an active 'Late Delivery Recovery' dialogue as of May 2026, with multiple emails and notes indicating a recovery plan is being prepared but not yet finalized. Unresolved support tickets, including one requesting escalation (T6246), further necessitate a Stabilize decision to ensure recovery completion.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H078",
+      "predicted_decision": "Stabilize",
+      "rationale": "The customer is actively engaged in a high-frequency email thread as of 2026-05-06 regarding late delivery recovery and has explicitly requested clarity on next steps.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H079",
+      "predicted_decision": "Escalate",
+      "rationale": "The account has four unresolved critical-priority support tickets and is currently in an active executive escalation email thread as of May 2026.",
+      "parse_error": false
+    },
+    {
+      "case_id": "H080",
+      "predicted_decision": "Monitor",
+      "rationale": "The account is in a Critical state due to a 50% late delivery rate and an active 'Executive Escalation' email thread (E17904). As this situation was already captured in reviews on May 7 and May 8 and CS is actively responding, the decision remains Monitor while the recovery plan is executed.",
+      "parse_error": false
+    }
+  ]
+}

@@ -28,4 +28,4 @@ python -m nelson.cli label-score eval/human_labels/sheet_a.csv eval/human_labels
 
 `label-score` makes no model calls. It reports each labeler's agreement with the synthetic label, agreement between labelers (Cohen's kappa), the majority human label per case (ties left out), and the model against that human label: accuracy with a 95% interval, macro F1, per-class precision and recall, and a confusion matrix, next to the model's score against the synthetic label on the same cases.
 
-No human labels or model predictions on this set exist yet.
+No human labels exist yet. Model predictions are in `predictions_20261012_150618.json` (`gemini-3-flash-preview`, 12 Oct 2026, Gemini API free tier): 78 of the 80 cases have a decision (41 Stabilize, 30 Escalate, 7 Monitor); H034 and H035 came back as parse errors and have none. They have not been scored, since there are no human labels to score them against.
