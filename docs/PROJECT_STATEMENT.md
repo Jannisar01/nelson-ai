@@ -1,8 +1,5 @@
 # Nelson AI — Project Statement
 
-**Course:** IS 303 — AI for Business Development & Data Analytics, Spring 2026
-**Submitted:** 2026-05-12
-
 ## The problem
 
 A senior B2B operations leader — a Chief Customer Officer at a manufacturing company, a Customer Success ops manager, a BI analyst on a portfolio team — typically owns hundreds to thousands of accounts. Each one has scattered evidence across systems: orders in ERP, tickets in support, notes in CRM, emails in Outlook, fulfillment incidents in operations, engagement data in marketing. **Nobody has the time to read all of it for every account.** Triage decisions get made on the loudest signal and the freshest emotion.
@@ -47,7 +44,7 @@ The design also enforces a hard product boundary: **Nelson does not act on custo
 
 Two Kaggle datasets — DataCo Smart Supply Chain (orders + customers) and Customer Support Tickets (support volume + sentiment) — were merged into a coherent 2,000-customer spine across 15 tables. The merge introduced fidelity issues (date misalignments across three eras, broken timestamp columns, missing email-to-ticket lineage, uniform synthetic volume regardless of risk). All five issues were audited (`data/AUDIT_REPORT.md`) and repaired with a documented, reversible script (`scripts/repair_data.py`, `data/REPAIR_LOG.md`). Originals are snapshotted in `data/customer_2000/.bak/`.
 
-Critically, `customer_review_logs` (2,583 rows) ships with `human_decision` labels and `review_outcomes` ships with outcome statuses. **This makes the dataset evaluable** — Nelson's recommendations can be scored against real reviewer decisions, not synthetic ground truth. The eval harness (`backend/nelson/eval.py`) does exactly this and emits a markdown report committed to the repo.
+Critically, `customer_review_logs` (2,583 rows) ships with `human_decision` labels and `review_outcomes` ships with outcome statuses. **This makes the dataset evaluable** — Nelson's recommendations can be scored against labeled reviewer decisions. Those labels are synthetic, generated from the customer, order and support signals, so agreement measures how closely Nelson matches a simulated reviewer. The eval harness (`backend/nelson/eval.py`) does exactly this and emits a markdown report committed to the repo.
 
 ## What still requires human judgment
 
@@ -65,4 +62,4 @@ The eval harness reveals where Nelson's judgment is unreliable (which decision c
 
 ## What's next
 
-The current scope is a working v1 demo. Production-readiness — real OAuth, multi-tenant isolation past the schema layer, hosted deployment, real Gmail integration replacing the mocked email layer — is scoped for the post-class iteration. The architecture is structured to absorb that work without a refactor (RBAC middleware in place, multi-tenant data model already enforced, fail-loud schema validation at load).
+The current scope is a working v1 demo. Production-readiness — real OAuth, multi-tenant isolation past the schema layer, hosted deployment, real Gmail integration replacing the mocked email layer — is scoped for the next iteration. The architecture is structured to absorb that work without a refactor (RBAC middleware in place, multi-tenant data model already enforced, fail-loud schema validation at load).

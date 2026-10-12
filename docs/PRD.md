@@ -1,6 +1,6 @@
 # Nelson AI — Product Requirements Document
 
-**Status:** v1 shipped · IS 303 Spring 2026 final
+**Status:** v1, runs locally on synthetic data
 **Author:** Reverse-engineered from the codebase at commit `4197794`
 **Last updated:** 2026-05-14
 
@@ -33,7 +33,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 2. **Reason over scattered evidence** — Nelson can chain tool calls across orders, tickets, notes, emails, engagement, and fulfillment events to ground every recommendation.
 3. **Draft, never act** — every customer-facing or system-mutating action queues for human approval with a rationale and confidence score.
 4. **Audit everything** — every Nelson draft, every human decision (approve/reject/edit), with attribution + timestamp.
-5. **Be evaluable** — score Nelson against the 2,583 real human review decisions shipped with the dataset.
+5. **Be evaluable** — score Nelson against the 2,583 labeled (synthetic) review decisions shipped with the dataset.
 6. **Two surfaces** — dashboard for desk, Telegram for phone, shared session memory, shared queue.
 
 ### Non-goals (v1)
@@ -41,7 +41,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 - Multi-tenant isolation past schema-level `tenant_id` (no row-level security, no per-tenant deploys).
 - Sending real emails to real customers in scale (Gmail SMTP path exists but only sends approved drafts from the configured account).
 - Time-series trends (NPS over time, sentiment over weeks). Dataset has no daily snapshots.
-- Hosted multi-user deployment. Runs locally for the IS 303 demo.
+- Hosted multi-user deployment. v1 runs locally.
 
 ---
 
@@ -195,7 +195,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 
 ---
 
-## 7. AI System Design Elements (IS 303 rubric mapping)
+## 7. AI system design elements
 
 | # | Element | Where | Visible in operation |
 |---|---|---|---|
@@ -221,7 +221,7 @@ Two more are partially supported: deterministic downstream logic on model output
 - Tool-call success rate >99% in `/diag` self-test (after the PEP 563 fix in commit `0927cc2`).
 - Zero "I am unable to retrieve…" silent failures — every tool error surfaces to the user with an exception class + message.
 
-### Learning (course)
+### Demonstrability
 - Five AI design elements demonstrably named, located, and visible in the deployed system.
 - Eval report committed to repo with both decision agreement and outcome alignment.
 - 7–10 min slide deck demoing all four Gartner zones live.

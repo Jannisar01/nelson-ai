@@ -11,7 +11,7 @@
 > An always-on AI Account Manager for B2B portfolios
 
 **Talking track (15 sec):**
-> "I built Nelson — an AI account manager that watches a portfolio of 2,000 B2B customers, identifies risk, briefs the human, and drafts actions for approval. The whole thing runs locally and is graded against real reviewer decisions in the dataset. I'll show you the system, then the evaluation."
+> "I built Nelson — an AI account manager that watches a portfolio of 2,000 B2B customers, identifies risk, briefs the human, and drafts actions for approval. The whole thing runs locally and is scored against labeled (synthetic) reviewer decisions in the dataset. I'll show you the system, then the evaluation."
 
 ---
 
@@ -80,7 +80,7 @@ Below them: ❌ *does not send*
 > "Who are the top 3 at-risk customers and what should I do about Mary Brady?"
 
 **Talking track (60 sec):**
-> "Notice what's happening — Nelson called `get_top_at_risk`, then `find_customer` for Mary Brady, then pulled her recent tickets, orders, fulfillment events. Five tool calls in sequence. He's not pattern-matching — he's deciding which data to fetch based on what I asked. And his answer cites specific record IDs from the data. That's tool use plus multi-step orchestration plus structured retrieval — three of the rubric's AI design elements visible in one interaction."
+> "Notice what's happening — Nelson called `get_top_at_risk`, then `find_customer` for Mary Brady, then pulled her recent tickets, orders, fulfillment events. Five tool calls in sequence. He's not pattern-matching — he's deciding which data to fetch based on what I asked. And his answer cites specific record IDs from the data. That's tool use plus multi-step orchestration plus structured retrieval — three AI design elements visible in one interaction."
 
 ---
 
@@ -121,7 +121,7 @@ Below them: ❌ *does not send*
 
 **Visual:** Two big headline numbers side by side (50% decision agreement · 60% outcome alignment) + per-class breakdown.
 
-**Headline:** *"Graded against 2,583 real human decisions in the dataset."*
+**Headline:** *"Scored against 2,583 labeled (synthetic) reviewer decisions in the dataset."*
 
 **Numbers** (from `eval/reports/eval_20260511_024750.md`, seed=42, N=30, model=gemini-2.5-flash):
 
@@ -149,7 +149,7 @@ Below them: ❌ *does not send*
 | **Nelson under-called** (he said less than reality required) | **0** |
 
 **Talking track (90 sec):**
-> "I held out 30 customers from `customer_review_logs` — these are real reviewer decisions. I asked Nelson to predict each one purely from raw evidence: notes, emails, tickets, orders, fulfillment events. I deliberately stripped `risk_band` and `last_review_decision` from his input — so he has to reason, not read the answer.
+> "I held out 30 customers from `customer_review_logs` — these are labeled reviewer decisions, synthetic like the rest of the review data. I asked Nelson to predict each one purely from raw evidence: notes, emails, tickets, orders, fulfillment events. I deliberately stripped `risk_band` and `last_review_decision` from his input — so he has to reason, not read the answer.
 >
 > Two headline numbers: **decision agreement 50%**, **outcome alignment 60%** — that's when he matches the label *or* he disagreed and the actual outcome data vindicated him.
 >
@@ -176,7 +176,7 @@ Below them: ❌ *does not send*
 - Escalating to leadership
 - Confirming lifecycle transitions
 
-**Right — what's next post-class:**
+**Right: what's next:**
 - Real Gmail OAuth (currently mocked from the dataset)
 - Hosted deployment (Render + Vercel)
 - Real auth (currently dev login)

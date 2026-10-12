@@ -1,10 +1,10 @@
-"""Auth + session for the demo.
+"""Auth + session for the single-user v1 build.
 
 Single-user developer login (email/password from .env). On success we set a
 signed cookie that carries `user_id|tenant_id|expires`. Requests without a
 valid cookie are rejected by `require_session`.
 
-Stateless, server-restart-safe. Replace with real auth (OAuth/OIDC) post-class.
+Stateless, server-restart-safe. Replace with real auth (OAuth/OIDC) before any hosted multi-user use.
 """
 from __future__ import annotations
 
