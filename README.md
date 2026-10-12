@@ -107,7 +107,7 @@ Two more elements are partially supported (deterministic downstream logic on mod
 
 ## Evaluation
 
-Nelson is scored against **2,583 labeled reviewer decisions** in `customer_review_logs`. These labels and their outcomes are synthetic (`synthetic_flag = true`), generated from the customer, order and support signals, so the eval measures agreement with a simulated reviewer, not with real people.
+Nelson is scored against **2,582 labeled reviewer decisions** in `customer_review_logs`. These labels and their outcomes are synthetic (`synthetic_flag = true`), generated from the customer, order and support signals, so the eval measures agreement with a simulated reviewer, not with real people.
 
 ```bash
 python -m nelson.cli eval 30
@@ -164,7 +164,7 @@ nelson_ai/
 - **Multi-tenant from day one.** Every spine table has `tenant_id`. Demo runs as one tenant; another company can plug in their data without a refactor.
 - **Human-in-the-loop on every action.** Nelson drafts; the human approves. The codebase has *no* execute path that bypasses the queue.
 - **Data is repaired, not pretended-clean.** `data/AUDIT_REPORT.md` documents the issues found in the merged Kaggle datasets. `data/REPAIR_LOG.md` documents every fix. Originals are snapshotted in `data/customer_2000/.bak/` so the repair script is idempotent and reversible.
-- **Eval against ground truth, not vibes.** 2,583 labeled (synthetic) reviewer decisions in the dataset are the validation set. Nelson's recommendations are scored against them — both on label match and on outcome alignment.
+- **Eval against ground truth, not vibes.** 2,582 labeled (synthetic) reviewer decisions in the dataset are the validation set. Nelson's recommendations are scored against them — both on label match and on outcome alignment.
 - **Lean code, structured.** Each layer has one job: API doesn't know about Gemini · agent doesn't write SQL · repositories don't know about HTTP. Swap Gemini for Claude or DuckDB for Postgres without rewriting anything.
 
 ## License & data attribution

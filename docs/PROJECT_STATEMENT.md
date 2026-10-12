@@ -44,7 +44,7 @@ The design also enforces a hard product boundary: **Nelson does not act on custo
 
 Two Kaggle datasets — DataCo Smart Supply Chain (orders + customers) and Customer Support Tickets (support volume + sentiment) — were merged into a coherent 2,000-customer spine across 15 tables. The merge introduced fidelity issues (date misalignments across three eras, broken timestamp columns, missing email-to-ticket lineage, uniform synthetic volume regardless of risk). All five issues were audited (`data/AUDIT_REPORT.md`) and repaired with a documented, reversible script (`scripts/repair_data.py`, `data/REPAIR_LOG.md`). Originals are snapshotted in `data/customer_2000/.bak/`.
 
-Critically, `customer_review_logs` (2,583 rows) ships with `human_decision` labels and `review_outcomes` ships with outcome statuses. **This makes the dataset evaluable** — Nelson's recommendations can be scored against labeled reviewer decisions. Those labels are synthetic, generated from the customer, order and support signals, so agreement measures how closely Nelson matches a simulated reviewer. The eval harness (`backend/nelson/eval.py`) does exactly this and emits a markdown report committed to the repo.
+Critically, `customer_review_logs` (2,582 rows) ships with `human_decision` labels and `review_outcomes` ships with outcome statuses. **This makes the dataset evaluable** — Nelson's recommendations can be scored against labeled reviewer decisions. Those labels are synthetic, generated from the customer, order and support signals, so agreement measures how closely Nelson matches a simulated reviewer. The eval harness (`backend/nelson/eval.py`) does exactly this and emits a markdown report committed to the repo.
 
 ## What still requires human judgment
 

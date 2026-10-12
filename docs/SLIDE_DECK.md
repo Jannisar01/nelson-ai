@@ -49,7 +49,7 @@ Below them: ❌ *does not send*
 **Headline:** *"2,000 B2B customers · 15 tables · 28 MB · merged from two Kaggle sources · audited, repaired, evaluable."*
 
 **Talking track (45 sec):**
-> "The data is two Kaggle datasets — DataCo Supply Chain and Customer Support Tickets — merged into a 2,000-customer spine. I audited it, found four real fidelity issues, and wrote a deterministic repair script that's documented and reversible. The most important thing about this data: it ships with 2,583 *labeled* reviewer decisions — Monitor, Stabilize, Escalate — which means I can actually grade Nelson's judgment instead of guessing."
+> "The data is two Kaggle datasets — DataCo Supply Chain and Customer Support Tickets — merged into a 2,000-customer spine. I audited it, found four real fidelity issues, and wrote a deterministic repair script that's documented and reversible. The most important thing about this data: it ships with 2,582 *labeled* reviewer decisions — Monitor, Stabilize, Escalate — which means I can actually grade Nelson's judgment instead of guessing."
 
 ---
 
@@ -121,7 +121,7 @@ Below them: ❌ *does not send*
 
 **Visual:** Two big headline numbers side by side (50% decision agreement · 60% outcome alignment) + per-class breakdown.
 
-**Headline:** *"Scored against 2,583 labeled (synthetic) reviewer decisions in the dataset."*
+**Headline:** *"Scored against 2,582 labeled (synthetic) reviewer decisions in the dataset."*
 
 **Numbers** (from `eval/reports/eval_20260511_024750.md`, seed=42, N=30, model=gemini-2.5-flash):
 

@@ -33,7 +33,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 2. **Reason over scattered evidence** — Nelson can chain tool calls across orders, tickets, notes, emails, engagement, and fulfillment events to ground every recommendation.
 3. **Draft, never act** — every customer-facing or system-mutating action queues for human approval with a rationale and confidence score.
 4. **Audit everything** — every Nelson draft, every human decision (approve/reject/edit), with attribution + timestamp.
-5. **Be evaluable** — score Nelson against the 2,583 labeled (synthetic) review decisions shipped with the dataset.
+5. **Be evaluable** — score Nelson against the 2,582 labeled (synthetic) review decisions shipped with the dataset.
 6. **Two surfaces** — dashboard for desk, Telegram for phone, shared session memory, shared queue.
 
 ### Non-goals (v1)
@@ -152,7 +152,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 - All non-auth, non-health routes require `require_session` dependency.
 
 ### 5.7 Eval harness
-- `python -m nelson.cli eval N` runs Nelson against `N` rows sampled from `customer_review_logs` (2,583 labeled rows total).
+- `python -m nelson.cli eval N` runs Nelson against `N` rows sampled from `customer_review_logs` (2,582 labeled rows total).
 - **Leakage prevention:** bundle strips `risk_band`, `risk_score`, `last_review_decision`, `next_best_action` before Nelson sees it.
 - **Metrics emitted:**
   - Decision agreement (Nelson's predicted class vs human label)
@@ -205,7 +205,7 @@ A traditional dashboard surfaces the data. A chatbot answers questions about it.
 | 4 | Memory across sessions | `nelson_sessions`, `nelson_messages` | Same context across Telegram + dashboard, across restarts |
 | 5 | Traceable evidence / audit trail | `pending_actions` + `human_decisions` | Right rail "Decided" tab, Telegram message edits |
 
-Two more are partially supported: deterministic downstream logic on model output, and simulation/synthetic-respondent eval against 2,583 labels.
+Two more are partially supported: deterministic downstream logic on model output, and simulation/synthetic-respondent eval against 2,582 labels.
 
 ---
 
