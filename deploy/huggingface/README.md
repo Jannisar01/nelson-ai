@@ -18,7 +18,7 @@ accounts at risk and drafts the next step; a person approves every action.
 - All data is synthetic: 2,000 customers across 15 tables.
 - Email sending and the Telegram bot are off in this demo.
 
-Code: https://github.com/yenicar/nelson-ai
+Code: https://github.com/Jannisar01/nelson-ai
 
 ## Deploying this Space
 

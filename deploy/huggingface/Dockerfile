@@ -22,7 +22,7 @@ ENV HOME=/home/user \
     PYTHONPATH=/home/user/app/backend \
     PYTHONUNBUFFERED=1
 
-ARG REPO=https://github.com/yenicar/nelson-ai
+ARG REPO=https://github.com/Jannisar01/nelson-ai
 ARG REF=main
 RUN git clone --depth 1 --branch $REF $REPO /home/user/app
 WORKDIR /home/user/app
