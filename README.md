@@ -1,5 +1,7 @@
 # Nelson AI — Account Intelligence System
 
+**Case study:** [sanaullahjannisar.com/work/nelson-ai](https://sanaullahjannisar.com/work/nelson-ai/), with the story, results and architecture. Built by [Sanaullah Jannisar](https://sanaullahjannisar.com), AI engineer.
+
 > **An always-on AI Account Manager for B2B portfolios.**
 > Nelson reads your customer data, identifies risk, briefs you, and drafts actions for you to approve. He never sends, never charges, never decides — humans do that.
 
